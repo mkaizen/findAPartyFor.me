@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900italic,400italic">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body ng-app="BlankApp" ng-cloak>
+  <!--
+    Your HTML content here
+  -->  
+  <html>
+  <div style="display:inline;vertical-align:-105%;">
+  <picture>
+  <source 
+    media="(min-width: 64px)" 
+    srcset="http://kaizenwebdesigns.com/findapartyfor.me/Cup.png,
+            http://kaizenwebdesigns.com/findapartyfor.me/Cup@2x.png 2x,  
+            http://kaizenwebdesigns.com/findapartyfor.me/Cup@3x.png 3x">
+  <img 
+    src="http://kaizenwebdesigns.com/findapartyfor.me/Cup.png" 
+    srcset="http://kaizenwebdesigns.com/findapartyfor.me/Cup.png,
+            http://kaizenwebdesigns.com/findapartyfor.me/Cup@2x.png 2x,  
+            http://kaizenwebdesigns.com/findapartyfor.me/Cup@3x.png 3x"
+    alt="a cute kitten">
+</picture>
+</div>
+  
+<div style="display:inline-block;">
+<h1 class="bd-display-1"; >Find a Party</h1>
+</div>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; background-color: rgb(256,256,256); }
+      html, h1{ text-align:  center; margin-top: 10px; color: rgb(255,81,90);  font-weight: 900; font-style: italic;} 
+      
+   
+
+  
+      #map { height: 90%;  } 
+      }
+    </style>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  </head>
+  <body>
+ 
+    <div id="map"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5i8zytpui8_G2Ux6onsvnl4-zl4i5dTw
+        &libraries=visualization,places&callback=initMap">
+    </script>
+    <script src="map.js"> </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84766805-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('BlankApp', ['ngMaterial']);
+  </script>
+  
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
